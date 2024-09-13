@@ -1,21 +1,21 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #0b0033, #16006d); /* Space gradient */
-    color: #fff;
+    background: linear-gradient(to bottom, #fce9f1, #dfe9ff); /* Soft pastel gradient */
+    color: #333; /* Softer, natural color for text */
     text-align: center;
     margin: 0;
     padding: 0;
-    background-image: url('https://images.unsplash.com/photo-1601333925326-15b724dbcd0c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
-    /* Photo by <a href="https://unsplash.com/@mxi_art?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">MXI Art</a> on <a href="https://unsplash.com/photos/blue-sky-with-stars-during-night-time-id0A-td1JBk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    background-image: url('https://images.unsplash.com/photo-1517315003714-a071486bd9ea?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+    /* https://unsplash.com/photos/low-angle-photography-of-purple-sky-NvesrDbsrL4
     */
     background-size: cover;
     background-position: center;
 }
 
 header {
-    color: #ffdf3d; /* Retro yellow color */
+    color: #5e5a60; /* Retro yellow color */
     font-size: 36px;
-    text-shadow: 2px 2px #000; /* Retro style shadow */
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
     margin: 0;
     padding: 20px;
 }
@@ -29,10 +29,10 @@ header h1 {
     max-width: 80%;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent */
+    background-color:rgba(255, 255, 255, 0.4);
     border-radius: 10px;
-    font-size: 16px;
-    color: #ffe4e1; /* Soft pink for a cute look */
+    font-size: 18px;
+    color: #555; /* Soft pink for a cute look */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -41,7 +41,7 @@ header h1 {
     font-weight: bold;
     margin: 20px auto;
     padding: 20px;
-    color: #fff;
+    color: #cc7392;
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -51,15 +51,15 @@ header h1 {
 }
 
 .chosen {
-    background-color: #f1b7de; /* Cute, pastel pink */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    background-color: #ffe0ec; /* Cute, pastel pink */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -136,7 +136,7 @@ header h1 {
 }
 
 .letter-div {
-    background-color: #66ccff; 
+    background-color: #988ac6; 
     font-size: 20px;
     padding: 10px;
     border-radius: 8px;
@@ -159,14 +159,10 @@ header h1 {
     background-color: #999;
 }
 
-.controls {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
 
 button {
-    background-color: #da90e1; 
-    color: #000;
+    background-color: #ffcbdd; 
+    color: #333;
     border: none;
     border-radius: 20px;
     padding: 10px 30px;
@@ -178,7 +174,7 @@ button {
 }
 
 button:hover {
-    background-color: #da90e1; /* Hover effect */
+    background-color: #ffbbcd; 
     transform: scale(1.1);
 }
 
@@ -189,4 +185,211 @@ footer {
     left: 0;
     width: 100%;
     text-align: center;
+}
+
+.landing-container {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ffe4e1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.landing-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.link-button {
+    background-color: #ffcbdd;  
+    color: #000;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #ffbbcd; 
+    transform: scale(1.1);
+}
+
+/* Container for two columns */
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent container background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left column (form and participant list) */
+.left-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Right column (result display) */
+.right-column {
+    flex: 1;
+}
+
+/* Form fields */
+.form-fields {
+    margin: 20px 0;
+}
+
+.form-fields input {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Optional fields */
+.optional-fields {
+    display: grid;
+    grid-template-columns: 150px auto; /* 150px for the label, 1fr for the input */
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.optional-fields label {
+    text-align: left; /* Align labels to the right */
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.optional-fields input {
+    width: 50px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#start-time-input:placeholder {
+    content: "HH:MM";
+    color: #9d9d9d;
+    position: absolute;
+    background: #fff;
+    width: 70px;
+}
+
+.participant-input-container {
+    display: flex;
+    gap: 15px; /* Adds some space between the input and button */
+    align-items: center;
+    margin-top: 15px;
+}
+
+#participant-input {
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-participant-button {
+    font-size: 14px;
+    color:#4c4b4b;
+    font-weight: bold;
+    padding: 7px 12px;
+}
+
+#add-participant-button:hover {
+    background-color: #ff99bb;
+}
+
+
+/* Participant list */
+.participant-list-header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.participant-list h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #4c4b4b;
+}
+
+#generate-button {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.participant-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.participant-list li {
+    display: flex; /* Use flexbox to control the layout */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    margin: 5px 0;
+    padding: 0;
+    width: auto; /* Ensure it doesn't take up full width */
+}
+
+.participant-list li span {
+    flex-grow: 1;
+    text-align: left;
+    padding-right: 20px;
+    
+}
+
+/* Reduce the space between the name and the minus sign */
+.participant-list li button {
+    background-color: #f0f0f0; /* Light grey background */
+    font-size: 16px; /* Adjust the font size for the minus sign */
+    color: #333; /* Neutral dark color for the minus sign */
+    cursor: pointer;
+    padding: 2px 8px; /* Reduced height */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+}
+
+.participant-list li button:hover {
+    background-color: #ff99bb;
+}
+
+/* Result area */
+.result {
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any extra padding */
+    display: block;
+    box-sizing: border-box;
+    position: relative; /* Ensure it's positioned relative to its parent */
+    width: auto; /* Ensure it takes up natural width */
+    height: auto; /* Let height adjust based on content */
+    display: block; /* Ensure it behaves as a block-level element */
+    top: 0; /* Start at the top */
+    left: 0; /* Start at the left */
+    border-radius: 0;
+}
+
+.result h3 {
+    font-size: 30px;
+    text-align: left;
+    color: #333;
+}
+
+#result-area p {
+    font-size: 16px;
+    text-align: left;
 }

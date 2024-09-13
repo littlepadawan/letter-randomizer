@@ -85,11 +85,11 @@ async function startRandomizing() {
         await sleep(500); // Pause for 1 second to build anticipation
         letters[resultLetterIndex].classList.add('selected'); // Highlight the result letter
 
-        await sleep(1000); // Pause for 500ms
+        await sleep(500); // Pause for 500ms
 
         letters[resultLetterIndex].classList.remove('selected'); // Remove the highlight
-
-        await sleep(800); // Pause for 500ms
+        letters[resultLetterIndex].classList.add('greyed-out'); // Grey out the result letter
+        await sleep(400); // Pause for 500ms
 
         document.getElementById('result-letter').textContent = resultLetterContent; // Display the pre-selected letter as the final result
         document.getElementById('result-letter').classList.add('chosen'); // Apply any additional styling or effects to the result
