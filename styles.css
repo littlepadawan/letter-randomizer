@@ -115,8 +115,10 @@ header h1 {
     flex-direction: column;
     gap: 10px;
     justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 0 auto;
+    width: fit-content;
+    /* margin-bottom: 20px;
+    margin-top: 20px; */
 }
 
 .row-1,
@@ -198,6 +200,10 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+.fun {
+    margin-bottom: 60px;
+}
+
 .landing-links {
     display: flex;
     justify-content: space-around;
@@ -206,7 +212,7 @@ footer {
 
 .link-button {
     background-color: #ffcbdd;  
-    color: #000;
+    color: #333;
     padding: 10px 30px;
     border-radius: 20px;
     font-size: 18px;
